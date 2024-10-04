@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #334;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#container {
+    margin-top: 50px;
+    font-family:monospace;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#word-display {
+    position: absolute;
+    top: 19.5rem;
+    width: 75%;
+    height: 16rem;
+    font-size: 30px;
+    font-family:monospace;
+    color: rgba(241, 239, 239, 0.276);
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    line-break: anywhere;
+    z-index: 10;
+}
+
+input {
+    opacity: 0;
+    z-index: -999;
+}
+
+.constraintes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: -250px;
+    width: 85%;
+}
+
+p  {
+    font-size: 23px;
+    margin-top: 25rem ;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+button {
+    position: absolute;
+    font-size: 25px;
+    bottom: 300px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(51, 51, 68, 0);
+    color: chartreuse;;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+button:hover{
+    color: gold;
+}
+h1 {
+    background-color: rgb(36, 36, 71);
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+h3 {
+    color: aquamarine;
+    position: relative;
+    top:-50px;
+}
+.result {
+    position: absolute;
+    top: 11rem;
+    width: 85%;
+    height: 31rem;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    z-index: 90;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px #ffffff92;
+    transform: rotateY('90') ;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+#time-select {
+    outline: none;
+    background-color: #334;
+    color: #FFFFFF;
+    font-size: 23px;
+    border: none;
+}
+footer {
+    position: relative;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #334;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:monospace;
+}
+
+#fp1 {
+    position: relative;
+    top: -10px;
+    font-size: smaller;
+    color: #d0c9c9cd;
+}
+
+#ptc{
+   text-decoration: none;
+   display: inline;
+   color: #f7c80a87;
+   position: relative;
+   top: -10px;
+}
+
+@media (max-width: 1024px) {
+    .constraintes {
+        
+        align-items: center;
+    }
+
+    .result {
+        font-size: 18px;
+        padding: 15px;
+    }
+    button {
+        position: absolute;
+        bottom: 130px;
+    }
+    footer {
+        position: absolute;
+        bottom: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .constraintes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result {
+        font-size: 18px;
+        padding: 15px;
+    }
+    button {
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #word-display  {
+        font-size: 16px;
+        width: 90%;
+    }
+    .constraintes {
+        height: 300px;
+        width: 90%;
+        font-size: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: justify;
+        justify-content: flex-start;
+        position: absolute;
+        top:-250px;
+    }
+
+    p {
+        font-size: 14px;
+        width: 30%;
+    }
+
+    .result {
+        font-size: 16px;
+        padding: 10px;height: 300px;
+    }
+    button {
+        top:100px;
+    }
+    #time-select {
+        font-size: 16px;
+        max-width:38px;
+    }
+    footer {
+        position: relative;
+        bottom: -250px;
+        height: 50px;
+        font-size: 10px;
+    }
+    #fp1 {
+        width: 100%;
+    }
+    h1 {
+        position: absolute;
+        top: 0px;
+    }
+}

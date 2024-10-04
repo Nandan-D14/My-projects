@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Me</title>
+    <link rel="icon" href="typemeIcon.ico" type="image/x-icon" height="10px" width="20px">
+    <link rel="stylesheet" href="typingGame.css">
+    
+</head>
+<body>
+    <div id="container" >
+        <h1>
+            <svg class="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gold" viewBox="0 0 24 18">
+                <path fill-rule="evenodd" d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7Zm5.01 1H5v2.01h2.01V8Zm3 0H8v2.01h2.01V8Zm3 0H11v2.01h2.01V8Zm3 0H14v2.01h2.01V8Zm3 0H17v2.01h2.01V8Zm-12 3H5v2.01h2.01V11Zm3 0H8v2.01h2.01V11Zm3 0H11v2.01h2.01V11Zm3 0H14v2.01h2.01V11Zm3 0H17v2.01h2.01V11Zm-12 3H5v2.01h2.01V14ZM8 14l-.001 2 8.011.01V14H8Zm11.01 0H17v2.01h2.01V14Z" clip-rule="evenodd"/>
+              </svg>
+              
+              
+            Type Me</h1>
+        
+        <div class="constraintes" >
+            <p id="wpm"></p>
+            <p id="Mistakes"></p>
+            <p id="time"></p>
+            <p>Choose Time: <select id="time-select">
+                <option value="30" selected>30 s</option>
+                <option value="60" >60 s</option>
+                <option value="120">120 s</option>
+            </select></p>
+            <p id="accuracy"></p>
+        </div>
+        <div id="word-display"></div>
+        <button id="reset-game">Reset</button>
+        <input type="text" id="input-area" >
+        
+    </div>
+    <footer >
+            <p id="fp1">&copy; 2024 Type Me. All rights reserved.</p>
+            
+            <a href="/terms" id = "ptc" >Terms & Conditions | Privacy</a>
+        </footer>
+    
+   
+
+
+    <script src="typingGame.js"></script>
+</body>
+</html>
